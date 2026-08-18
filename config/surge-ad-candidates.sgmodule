@@ -2,13 +2,13 @@
 #!desc=由 Surge Ad Inspector 生成，请人工确认后启用
 
 [MITM]
-hostname = %APPEND% avris-prod-1256532032.cos.ap-beijing.myqcloud.com,bmp-prod-cos.faw-vw.com,fawvw-mall-pages-prod-1256532032.file.myqcloud.com,oap4-test-cos-admin-1256532032.cos.ap-beijing.myqcloud.com,one-app-production-1256532032.picbj.myqcloud.com,oneapp-api.faw-vw.com,vwapp-prod-cos-client-1256532032.cos.ap-beijing.myqcloud.com
+hostname = %APPEND% apimobile.meituan.com,avatar3-1.pddpic.com,ddplus.meituan.net,df.tanx.com,img.meituan.net,p0.meituan.net,p1.meituan.net
 
 [Rule]
-DOMAIN,avris-prod-1256532032.cos.ap-beijing.myqcloud.com,REJECT
-DOMAIN,bmp-prod-cos.faw-vw.com,REJECT
-DOMAIN,fawvw-mall-pages-prod-1256532032.file.myqcloud.com,REJECT
-DOMAIN,oap4-test-cos-admin-1256532032.cos.ap-beijing.myqcloud.com,REJECT
-DOMAIN,one-app-production-1256532032.picbj.myqcloud.com,REJECT
-DOMAIN,oneapp-api.faw-vw.com,REJECT
-DOMAIN,vwapp-prod-cos-client-1256532032.cos.ap-beijing.myqcloud.com,REJECT
+DOMAIN,apimobile.meituan.com,REJECT
+DOMAIN,avatar3-1.pddpic.com,REJECT
+DOMAIN,ddplus.meituan.net,REJECT
+DOMAIN,df.tanx.com,REJECT
+DOMAIN,img.meituan.net,REJECT
+DOMAIN,p0.meituan.net,REJECT
+DOMAIN,p1.meituan.net,REJECT
