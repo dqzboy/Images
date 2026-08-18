@@ -2,23 +2,13 @@
 #!desc=由 Surge Ad Inspector 生成，请人工确认后启用
 
 [MITM]
-hostname = %APPEND% avris-prod-1256532032.cos.ap-beijing.myqcloud.com,bmp-prod-cos.faw-vw.com,fawvw-mall-pages-prod-1256532032.file.myqcloud.com,oap4-test-cos-admin-1256532032.cos.ap-beijing.myqcloud.com,oneapp-api.faw-vw.com,vwapp-prod-cos-client-1256532032.cos.ap-beijing.myqcloud.com
+hostname = %APPEND% avris-prod-1256532032.cos.ap-beijing.myqcloud.com,bmp-prod-cos.faw-vw.com,fawvw-mall-pages-prod-1256532032.file.myqcloud.com,oap4-test-cos-admin-1256532032.cos.ap-beijing.myqcloud.com,one-app-production-1256532032.picbj.myqcloud.com,oneapp-api.faw-vw.com,vwapp-prod-cos-client-1256532032.cos.ap-beijing.myqcloud.com
 
-[URL Rewrite]
-^https:\/\/avris\-prod\-1256532032\.cos\.ap\-beijing\.myqcloud\.com/cms\-static/avris/cd5adf2f51e44815abd314bcd659c72a\.gif(?:\?.*)?$ - reject
-^https:\/\/avris\-prod\-1256532032\.cos\.ap\-beijing\.myqcloud\.com/cms\-static/avris/0f2d5b75aa97490f88b34ffdad344668\.jpg(?:\?.*)?$ - reject
-^https:\/\/avris\-prod\-1256532032\.cos\.ap\-beijing\.myqcloud\.com/cms\-static/avris/bfa62e44db164cad916d17e8a9ef7784\.jpg(?:\?.*)?$ - reject
-^https:\/\/oneapp\-api\.faw\-vw\.com/content/booth/getBoothList/v1(?:\?.*)?$ - reject
-^https:\/\/vwapp\-prod\-cos\-client\-1256532032\.cos\.ap\-beijing\.myqcloud\.com/pub/img/d96926aad3414595a2bf5fb8dd5dc5f5\.png(?:\?.*)?$ - reject
-^https:\/\/fawvw\-mall\-pages\-prod\-1256532032\.file\.myqcloud\.com/906644221a4ad3399991f914de554d84\.jpg(?:\?.*)?$ - reject
-^https:\/\/fawvw\-mall\-pages\-prod\-1256532032\.file\.myqcloud\.com/1524c6e9927c0946db3634ad9d07bc46\.jpg(?:\?.*)?$ - reject
-^https:\/\/fawvw\-mall\-pages\-prod\-1256532032\.file\.myqcloud\.com/f5b27459ebea2756b0cadcec871c127f\.png(?:\?.*)?$ - reject
-^https:\/\/fawvw\-mall\-pages\-prod\-1256532032\.file\.myqcloud\.com/749a1ad686c608512d1c795e0a6383b0\.jpg(?:\?.*)?$ - reject
-^https:\/\/fawvw\-mall\-pages\-prod\-1256532032\.file\.myqcloud\.com/c4e64b7e01933b7431c6bdfad38017fa\.png(?:\?.*)?$ - reject
-^https:\/\/fawvw\-mall\-pages\-prod\-1256532032\.file\.myqcloud\.com/d80588b8c46ec633ad6f181fc7d5a577\.jpg(?:\?.*)?$ - reject
-^https:\/\/fawvw\-mall\-pages\-prod\-1256532032\.file\.myqcloud\.com/ca681af53b71d594a93faad3ad5e47d5\.jpg(?:\?.*)?$ - reject
-^https:\/\/oap4\-test\-cos\-admin\-1256532032\.cos\.ap\-beijing\.myqcloud\.com/images/15c9f0eb85d84f92b6d29435aa7e8b5f\.png(?:\?.*)?$ - reject
-^https:\/\/oap4\-test\-cos\-admin\-1256532032\.cos\.ap\-beijing\.myqcloud\.com/images/453c07b63f074cd38e952574a9e365f7\.png(?:\?.*)?$ - reject
-^https:\/\/oap4\-test\-cos\-admin\-1256532032\.cos\.ap\-beijing\.myqcloud\.com/images/090795f457064884b5d7441e8a6d7294\.png(?:\?.*)?$ - reject
-^https:\/\/oap4\-test\-cos\-admin\-1256532032\.cos\.ap\-beijing\.myqcloud\.com/images/40ed944efb3b419dadc17e38f83ad0a2\.png(?:\?.*)?$ - reject
-^https:\/\/bmp\-prod\-cos\.faw\-vw\.com/old/vw/simple/admin/vehicle/image/A2/A22RGZ/0Q0Q/vehicleImage_A2_A22RGZ_0Q0Q_b88074c00d614d7e930ed27a9ea1b7ac\.png(?:\?.*)?$ - reject
+[Rule]
+DOMAIN,avris-prod-1256532032.cos.ap-beijing.myqcloud.com,REJECT
+DOMAIN,bmp-prod-cos.faw-vw.com,REJECT
+DOMAIN,fawvw-mall-pages-prod-1256532032.file.myqcloud.com,REJECT
+DOMAIN,oap4-test-cos-admin-1256532032.cos.ap-beijing.myqcloud.com,REJECT
+DOMAIN,one-app-production-1256532032.picbj.myqcloud.com,REJECT
+DOMAIN,oneapp-api.faw-vw.com,REJECT
+DOMAIN,vwapp-prod-cos-client-1256532032.cos.ap-beijing.myqcloud.com,REJECT
